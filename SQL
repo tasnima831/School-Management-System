@@ -1,0 +1,16 @@
+mysql -h localhost -u root -p
+
+create database SchoolManagementSystem;
+
+use SchoolManagementSystem;
+
+create table admin(username varchar(50) primary key, name varchar(50), password varchar(10));
+
+show tables;
+
+desc admin;
+
+insert into admin(username, name, password) values("admin", "Raj", "admin");
+
+select * from admin;
+
